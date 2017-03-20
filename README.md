@@ -31,3 +31,9 @@ Run this command from the root directory for your DreamFactory instance installa
   ...\apps\dreamfactory\htdocs>php artisan config:clear
   ...\apps\dreamfactory\htdocs>php artisan cache:clear
 ```
+# Remove JSON trace information
+In <code>...\apps\dreamfactory\htdocs\.env</code>, <code>APP_ENV = local</code> change to "production":
+```js
+APP_ENV=production
+...\apps\dreamfactory\htdocs>php artisan config:clear
+```
