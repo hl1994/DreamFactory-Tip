@@ -3,7 +3,7 @@ Normally JWT session tokens can only be refreshed prior to the DF_JWT_REFRESH_TT
 
 ### Configuration
 #### 1. Set DF_ALLOW_FOREVER_SESSIONS
-In <code>...\apps\dreamfactory\htdocs\.env</code>, add or un-comment this line and set the value to true:
+In <code>...\apps\dreamfactory\htdocs\\.env</code>, add or un-comment this line and set the value to true:
 ```js
 DF_ALLOW_FOREVER_SESSIONS=true
 ```
@@ -19,7 +19,7 @@ Look for the following in your response.
 ```
 
 #### 2. Set DF_JWT_TTL
-In <code>...\apps\dreamfactory\htdocs\.env</code>, add or un-comment this line and set the value to your desired TTL in minutes. A session refresh will be required to receive a new session token after this many minutes.
+In <code>...\apps\dreamfactory\htdocs\\.env</code>, add or un-comment this line and set the value to your desired TTL in minutes. A session refresh will be required to receive a new session token after this many minutes.
 ```js
 DF_JWT_TTL=1440
 ```
@@ -32,7 +32,7 @@ Run this command from the root directory for your DreamFactory instance installa
   ...\apps\dreamfactory\htdocs>php artisan cache:clear
 ```
 # Remove JSON trace information
-In <code>...\apps\dreamfactory\htdocs\.env</code>, <code>APP_ENV = local</code> change to "production":
+In <code>...\apps\dreamfactory\htdocs\\.env</code>, <code>APP_ENV = local</code> change to "production":
 ```js
 APP_ENV=production
 ...\apps\dreamfactory\htdocs>php artisan config:clear
